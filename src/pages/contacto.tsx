@@ -17,6 +17,7 @@ const Contacto = () => {
   const [formData, setFormData] = useState({
     from_name: "",
     reply_to: "",
+    telefono: "",
     mensaje: "",
   });
 
@@ -27,21 +28,28 @@ const Contacto = () => {
   };
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault(); // Prevenir recarga de página
-    console.log("Formulario enviado, datos:", formData); // Verificar que se captura el evento
+    e.preventDefault();
+
+    // Concatenar el teléfono al mensaje
+    const mensajeCompleto = `${formData.mensaje}\n\nTeléfono: ${formData.telefono}`;
 
     emailjs
       .send(
         "service_xqzn36d", // Tu Service ID
         "template_1fm1cuy", // Tu Template ID
-        formData, // Datos del formulario
+        { ...formData, mensaje: mensajeCompleto }, // Adjuntamos el mensaje completo
         "i5QyBWaY2s18CWJEh" // Tu Public Key
       )
       .then(
         (result) => {
           console.log("Éxito:", result);
           alert("Mensaje enviado correctamente");
-          setFormData({ from_name: "", reply_to: "", mensaje: "" }); // Limpiar el formulario
+          setFormData({
+            from_name: "",
+            reply_to: "",
+            telefono: "",
+            mensaje: "",
+          });
         },
         (error) => {
           console.error("Error al enviar el mensaje:", error);
@@ -56,15 +64,14 @@ const Contacto = () => {
       <Flex
         align="center"
         bg="#FFFBF2"
-        h={{ base: "auto", xl: "100vh" }}
+        h={{ base: "auto", lg: "auto", xl: "100vh" }}
         w="100%"
         pt={{ base: 20, xl: 10 }}
-        direction={{ base: "column", xl: "row" }}
+        direction={{ base: "column", lg: "column", xl: "row" }}
       >
         {/* Cuadrados de Información de Contacto */}
         <SimpleGrid
           columns={{ base: 1, xl: 2 }}
-          //   w={{ base: "100%", lg: "40%" }}
           h={{ base: "auto", xl: "100%" }}
           p={{ base: 4, xl: 10 }}
           spacing={6}
@@ -176,9 +183,9 @@ const Contacto = () => {
             <Box w="60%" alignItems="center">
               <form onSubmit={handleSubmit}>
                 <Text
-                  fontSize="4xl"
+                  fontSize="3xl"
                   fontWeight="bold"
-                  mb={12}
+                  mb={10}
                   color="Black"
                   textAlign="center"
                 >
@@ -186,7 +193,7 @@ const Contacto = () => {
                 </Text>
                 <Input
                   placeholder="Nombre"
-                  mb={6}
+                  mb={2}
                   bg="white"
                   name="from_name"
                   value={formData.from_name}
@@ -194,10 +201,18 @@ const Contacto = () => {
                 />
                 <Input
                   placeholder="Email"
-                  mb={6}
+                  mb={2}
                   bg="white"
                   name="reply_to"
                   value={formData.reply_to}
+                  onChange={handleChange}
+                />
+                <Input
+                  placeholder="Teléfono"
+                  mb={2}
+                  bg="white"
+                  name="telefono"
+                  value={formData.telefono}
                   onChange={handleChange}
                 />
                 <Textarea
