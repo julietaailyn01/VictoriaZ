@@ -14,7 +14,7 @@ export default function Home() {
       {/* Botón de WhatsApp */}
       <IconButton
         as="a"
-        href="https://wa.me/00541169594371" // Cambia por tu número de WhatsApp
+        href="https://wa.me/5491169594371"
         target="_blank"
         aria-label="WhatsApp"
         icon={<FaWhatsapp size="2xl" />}
