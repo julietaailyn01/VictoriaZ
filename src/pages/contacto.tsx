@@ -56,19 +56,19 @@ const Contacto = () => {
       <Flex
         align="center"
         bg="#FFFBF2"
-        h={{ base: "auto", lg: "100vh" }}
+        h={{ base: "auto", xl: "100vh" }}
         w="100%"
-        pt={{ base: 20, lg: 10 }}
-        direction={{ base: "column", lg: "row" }}
+        pt={{ base: 20, xl: 10 }}
+        direction={{ base: "column", xl: "row" }}
       >
         {/* Cuadrados de Información de Contacto */}
         <SimpleGrid
-          columns={{ base: 1, lg: 2 }}
+          columns={{ base: 1, xl: 2 }}
           //   w={{ base: "100%", lg: "40%" }}
-          h={{ base: "auto", lg: "100%" }}
-          p={{ base: 4, lg: 10 }}
+          h={{ base: "auto", xl: "100%" }}
+          p={{ base: 4, xl: 10 }}
           spacing={6}
-          position={{ base: "relative", lg: "absolute" }}
+          position={{ base: "relative", xl: "absolute" }}
           zIndex={1}
           alignContent="center"
           ml={10}
@@ -166,57 +166,67 @@ const Contacto = () => {
             display="flex"
             p={8}
             shadow="md"
-            w={{ base: "90%", lg: "60%" }}
+            w={{ base: "90%", xl: "60%" }}
             h="60%"
             alignItems="center"
             justifySelf="flex-end"
             justifyContent="center"
             position="relative"
           >
-            <form onSubmit={handleSubmit}>
-              <Text
-                fontSize="xl"
-                fontWeight="bold"
-                mb={4}
-                color="Black"
-                textAlign="center"
-              >
-                Contactame
-              </Text>
-              <Input
-                placeholder="Nombre"
-                mb={4}
-                bg="white"
-                name="from_name"
-                value={formData.from_name}
-                onChange={handleChange}
-              />
-              <Input
-                placeholder="Email"
-                mb={4}
-                bg="white"
-                name="reply_to"
-                value={formData.reply_to}
-                onChange={handleChange}
-              />
-              <Textarea
-                placeholder="Mensaje"
-                mb={4}
-                bg="white"
-                name="mensaje"
-                value={formData.mensaje}
-                onChange={handleChange}
-              />
-              <Button
-                type="submit"
-                bg="#4B4B4B"
-                color="white"
-                w="full"
-                _hover={{ bg: "#333" }}
-              >
-                ENVIAR
-              </Button>
-            </form>
+            <Box w="60%" alignItems="center">
+              <form onSubmit={handleSubmit}>
+                <Text
+                  fontSize="4xl"
+                  fontWeight="bold"
+                  mb={12}
+                  color="Black"
+                  textAlign="center"
+                >
+                  Contactame
+                </Text>
+                <Input
+                  placeholder="Nombre"
+                  mb={6}
+                  bg="white"
+                  name="from_name"
+                  value={formData.from_name}
+                  onChange={handleChange}
+                />
+                <Input
+                  placeholder="Email"
+                  mb={6}
+                  bg="white"
+                  name="reply_to"
+                  value={formData.reply_to}
+                  onChange={handleChange}
+                />
+                <Textarea
+                  placeholder="Mensaje"
+                  mb={6}
+                  bg="white"
+                  name="mensaje"
+                  value={formData.mensaje}
+                  onChange={handleChange}
+                />
+                <Box
+                  w="100%"
+                  display="flex"
+                  alignItems="center"
+                  justifyContent="center"
+                >
+                  <Button
+                    type="submit"
+                    border="1px solid purple"
+                    bg="transparent"
+                    color="black"
+                    w="fit-content"
+                    _hover={{ bg: "purple", color: "white" }}
+                  >
+                    ENVIAR
+                  </Button>
+                </Box>
+              </form>
+            </Box>
           </Box>
         </Box>
       </Flex>
