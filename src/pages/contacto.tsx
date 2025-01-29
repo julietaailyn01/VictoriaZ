@@ -73,6 +73,7 @@ const Contacto = () => {
         <SimpleGrid
           columns={{ base: 1, xl: 2 }}
           h={{ base: "auto", xl: "100%" }}
+          w={{ base: "100%", xl: "50%" }}
           p={{ base: 4, xl: 10 }}
           spacing={6}
           position={{ base: "relative", xl: "absolute" }}
