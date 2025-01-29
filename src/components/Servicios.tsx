@@ -9,7 +9,7 @@ const ServicioCard = ({
 }) => (
   <Flex
     border="1px"
-    borderColor="#EA9FFF"
+    borderColor="#bea3d8"
     borderRadius="md"
     p={[4, 4, 10]} // Padding más pequeño en pantallas pequeñas
     direction="column"
@@ -35,7 +35,7 @@ const ServicioCard = ({
             as="span"
             w="8px"
             h="8px"
-            bg="#EA9FFF"
+            bg="#bea3d8"
             borderRadius="50%"
             mr={3}
           />
@@ -47,7 +47,7 @@ const ServicioCard = ({
 );
 
 const Servicios = () => (
-  <Box py={12} minH="100hv" px={8} bg="#FFFBF2">
+  <Box py={12} minH="100hv" px={8} bg="#f2edf7">
     <Text fontSize="2xl" fontWeight="bold" mb={12} textAlign="center">
       Servicios
     </Text>

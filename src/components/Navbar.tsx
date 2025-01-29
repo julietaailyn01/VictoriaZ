@@ -32,7 +32,7 @@ const Navbar = ({ isHome = false }: NavBarProps) => {
       position="fixed"
       top="0"
       w="full"
-      bg={!isHome ? "#EA9FFF" : "transparent"}
+      bg={!isHome ? "#bea3d8" : "transparent"}
       backdropFilter="blur(10px)"
       zIndex="10"
       px={8}
@@ -89,7 +89,7 @@ const Navbar = ({ isHome = false }: NavBarProps) => {
       {/* Menú desplegable para pantallas pequeñas */}
       <Collapse in={isOpen} animateOpacity>
         <Box
-          bg={!isHome ? "#EA9FFF" : "rgba(0, 0, 0, 0.8)"}
+          bg={!isHome ? "#bea3d8" : "rgba(0, 0, 0, 0.8)"}
           color={!isHome ? "black" : "white"}
           px={4}
           py={4}

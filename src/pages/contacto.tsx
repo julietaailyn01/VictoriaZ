@@ -63,7 +63,7 @@ const Contacto = () => {
       <Navbar />
       <Flex
         align="center"
-        bg="#FFFBF2"
+        bg="#f2edf7"
         h={{ base: "auto", lg: "auto", xl: "100vh" }}
         w="100%"
         pt={{ base: 20, xl: 10 }}
@@ -92,7 +92,7 @@ const Contacto = () => {
             h="200px"
             justify="center"
           >
-            <Icon as={FaUser} boxSize={6} color="#EA9FFF" />
+            <Icon as={FaUser} boxSize={6} color="#bea3d8" />
             <Box>
               <Text fontSize="sm" fontWeight="bold" color="white">
                 NOMBRE
@@ -113,7 +113,7 @@ const Contacto = () => {
             h="200px"
             justify="center"
           >
-            <Icon as={FaPhoneAlt} boxSize={6} color="#EA9FFF" />
+            <Icon as={FaPhoneAlt} boxSize={6} color="#bea3d8" />
             <Box>
               <Text fontSize="sm" fontWeight="bold" color="white">
                 TELÉFONO
@@ -134,7 +134,7 @@ const Contacto = () => {
             h="200px"
             justify="center"
           >
-            <Icon as={FaMapMarkerAlt} boxSize={6} color="#EA9FFF" />
+            <Icon as={FaMapMarkerAlt} boxSize={6} color="#bea3d8" />
             <Box>
               <Text fontSize="sm" fontWeight="bold" color="white">
                 UBICACIÓN
@@ -155,7 +155,7 @@ const Contacto = () => {
             h="200px"
             justify="center"
           >
-            <Icon as={FaEnvelope} boxSize={6} color="#EA9FFF" />
+            <Icon as={FaEnvelope} boxSize={6} color="#bea3d8" />
             <Box>
               <Text fontSize="sm" fontWeight="bold" color="white">
                 CORREO
@@ -168,7 +168,7 @@ const Contacto = () => {
         {/* Formulario de Contacto */}
         <Box w="100%" alignContent="center" h="100%" mr={10}>
           <Box
-            bg="#EA9FFF"
+            bg="#bea3d8"
             borderRadius="0"
             display="flex"
             p={8}

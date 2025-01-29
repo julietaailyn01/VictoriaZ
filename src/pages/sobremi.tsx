@@ -16,94 +16,94 @@ const formacionData = [
   {
     titulo: "Herramientas de Administración de Personal",
     instituto: "UTN",
-    fecha: "Presente",
+    fecha: "Ene 2025",
   },
   {
     titulo: "Asistente de Recursos Humanos",
     instituto: "Capacitate",
-    fecha: "Presente",
+    fecha: "Ene 2025",
   },
   {
     titulo: "Liderazgo Público",
     instituto: "INAP",
-    fecha: "Presente",
+    fecha: "Ene 2025",
   },
   {
     titulo: "Seguridad en la información",
     instituto: "CRJPPF",
-    fecha: "Presente",
+    fecha: "Ene 2025",
   },
   {
     titulo: "Introducción a la Seguridad e Higiene en el Trabajo",
     instituto: "INAP",
-    fecha: "Presente",
+    fecha: "Ene 2025",
   },
   {
     titulo: "Excel: Funciones Avanzadas",
     instituto: "INAP",
-    fecha: "Presente",
+    fecha: "Ene 2025",
   },
   {
     titulo: "Diplomatura en Gestión de los RRHH en el Sector Público",
     instituto: "INAP",
-    fecha: "Presente",
+    fecha: "Ene 2025",
   },
   {
     titulo: "Gestión Administrativa: Roles y Funciones",
     instituto: "INAP",
-    fecha: "Presente",
+    fecha: "Ene 2025",
   },
   {
     titulo:
       "Introducción a la Organización del Trabajo: Claves para Administrar el Tiempo",
     instituto: "INAP",
-    fecha: "Presente",
+    fecha: "Ene 2025",
   },
   {
     titulo: "Gestión del Cambio Organizacional",
     instituto: "INAP",
-    fecha: "Presente",
+    fecha: "Ene 2025",
   },
   {
     titulo: "Riesgos Derivados de la Organización del Trabajo",
     instituto: "INAP",
-    fecha: "Presente",
+    fecha: "Ene 2025",
   },
   {
     titulo: "Selección para Perfiles IT",
     instituto: "Capacitate UBA",
-    fecha: "Presente",
+    fecha: "Ene 2025",
   },
   {
     titulo: "Régimen de Contrataciones de la Administración Nacional",
     instituto: "INAP",
-    fecha: "Presente",
+    fecha: "Ene 2025",
   },
   {
     titulo: "El Enfoque de Derechos en las Políticas Públicas",
     instituto: "INAP",
-    fecha: "Presente",
+    fecha: "Ene 2025",
   },
   {
     titulo: "Curso de Inglés",
     instituto:
       "IUPFA (Instituto Universitario de la Policía Federal Argentina)",
-    fecha: "Presente",
+    fecha: "Ene 2025",
   },
   {
     titulo: "Curso de Prevención de Riesgos en Espacios Confinados",
     instituto: "FISO",
-    fecha: "Presente",
+    fecha: "Ene 2025",
   },
   {
     titulo: "Curso de Empleo Público",
     instituto: "INAP",
-    fecha: "Presente",
+    fecha: "Ene 2025",
   },
   {
     titulo: "Curso de Aspectos Generales de la Redacción",
     instituto: "INAP",
-    fecha: "Presente",
+    fecha: "Ene 2025",
   },
   {
     titulo: "Diplomatura en RRHH",
@@ -153,7 +153,7 @@ const experienciaData = [
 
 const SobreMi = () => {
   return (
-    <Box bg="#FFFBF2">
+    <Box bg="#f2edf7">
       <Navbar />
       {/* Imagen superior */}
       <Box position="relative" h="70vh" w="100%">
@@ -182,13 +182,15 @@ const SobreMi = () => {
           </Text>
           <Box justifyItems="center">
             <Text fontSize="xl" textAlign="center" color="gray.700" maxW="100%">
-              En estos años obtuve experiencia en administración pública,
-              adquiriendo capacidad para la resolución de conflictos con otros
-              Organismos y/o beneficiarios, relaciones personales, gestión
-              administrativa en el trabajo de expedientes. Y en Recursos Humanos
-              en la sección de capacitaciones, reclutamiento y selección de
-              personal, entrevistas, armado de legajos personales. Busco un
-              entorno de trabajo dinámico donde se ofrezcan perspectivas de
+              Con años de experiencia en administración pública, he
+              perfeccionado mis habilidades en la resolución de conflictos y en
+              la construcción de relaciones sólidas con organizaciones y
+              beneficiarios. Además, he adquirido experiencia en gestión
+              administrativa y manejo de archivos. Mi rol en Recursos Humanos me
+              ha permitido desarrollar experiencia en capacitación de personal,
+              reclutamiento, selección, realización de entrevistas y
+              organización de expedientes personales. Actualmente, busco un
+              entorno de trabajo dinámico que fomente las oportunidades de
               crecimiento profesional.
             </Text>
           </Box>
@@ -211,7 +213,7 @@ const SobreMi = () => {
                 direction="column"
                 p={4}
                 border="1px solid"
-                borderColor="#EA9FFF"
+                borderColor="#bea3d8"
                 borderRadius="md"
                 shadow="sm"
               >
