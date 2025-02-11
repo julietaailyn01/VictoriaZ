@@ -47,14 +47,21 @@ const ServicioCard = ({
 );
 
 const Servicios = () => (
-  <Box py={12} minH="100hv" px={8} bg="#f2edf7">
+  <Box py={12} minH="100vh" px={8} bg="#f2edf7">
+    {/* Nueva sección con el speech */}
+    <Box textAlign="center" bg="#bea3d8" p={10} borderRadius="md" mb={12}>
+      <Text fontSize="xl" fontWeight="bold" color="white" mb={4}>
+        Recursos humanos y desarrollo organizacional
+      </Text>
+      <Text fontSize="lg" fontWeight="bold" color="black" mt={4}>
+        ¿Tenés un proyecto en mente? ¡Hablemos!
+      </Text>
+    </Box>
+
     <Text fontSize="2xl" fontWeight="bold" mb={12} textAlign="center">
       Servicios
     </Text>
-    <SimpleGrid
-      columns={[1, 1, 2]} // 1 columna en pantallas pequeñas, 2 en medianas y grandes
-      spacing={[6, 10]} // Espaciado más pequeño en dispositivos pequeños
-    >
+    <SimpleGrid columns={[1, 1, 2]} spacing={[6, 10]}>
       <ServicioCard
         title="Ayuda al armado de CV"
         descriptions={[

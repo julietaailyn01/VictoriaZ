@@ -93,7 +93,7 @@ const Contacto = () => {
             h="200px"
             justify="center"
           >
-            <Icon as={FaUser} boxSize={6} color="#bea3d8" />
+            <Icon as={FaUser} boxSize={6} color="#804796" />
             <Box>
               <Text fontSize="sm" fontWeight="bold" color="white">
                 NOMBRE
@@ -114,7 +114,7 @@ const Contacto = () => {
             h="200px"
             justify="center"
           >
-            <Icon as={FaPhoneAlt} boxSize={6} color="#bea3d8" />
+            <Icon as={FaPhoneAlt} boxSize={6} color="#804796" />
             <Box>
               <Text fontSize="sm" fontWeight="bold" color="white">
                 TELÉFONO
@@ -135,7 +135,7 @@ const Contacto = () => {
             h="200px"
             justify="center"
           >
-            <Icon as={FaMapMarkerAlt} boxSize={6} color="#bea3d8" />
+            <Icon as={FaMapMarkerAlt} boxSize={6} color="#804796" />
             <Box>
               <Text fontSize="sm" fontWeight="bold" color="white">
                 UBICACIÓN
@@ -156,7 +156,7 @@ const Contacto = () => {
             h="200px"
             justify="center"
           >
-            <Icon as={FaEnvelope} boxSize={6} color="#bea3d8" />
+            <Icon as={FaEnvelope} boxSize={6} color="#804796" />
             <Box>
               <Text fontSize="sm" fontWeight="bold" color="white">
                 CORREO
@@ -169,7 +169,7 @@ const Contacto = () => {
         {/* Formulario de Contacto */}
         <Box w="100%" alignContent="center" h="100%" mr={10}>
           <Box
-            bg="#bea3d8"
+            bg="#804796"
             borderRadius="0"
             display="flex"
             p={8}

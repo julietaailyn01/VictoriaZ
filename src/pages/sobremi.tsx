@@ -1,5 +1,13 @@
 import Navbar from "@/components/Navbar";
-import { Box, Text, Flex, SimpleGrid, Button, Divider } from "@chakra-ui/react";
+import {
+  Box,
+  Text,
+  Flex,
+  SimpleGrid,
+  Button,
+  Divider,
+  Image,
+} from "@chakra-ui/react";
 
 // Datos de formación
 const formacionData = [
@@ -155,58 +163,47 @@ const SobreMi = () => {
   return (
     <Box bg="#f2edf7">
       <Navbar />
-      {/* Imagen superior */}
-      <Box position="relative" h="70vh" w="100%">
-        <Box
-          bgImage="url('/images/2.png')"
-          bgPosition="center"
-          bgSize="cover"
-          h="100%"
-          w="100%"
-        />
-        {/* Superposición oscura SOLO en la imagen */}
-        <Box
-          position="absolute"
-          top="0"
-          left="0"
-          w="100%"
-          h="100%"
-          bg="rgba(0, 0, 0, 0.5)" // Efecto de oscurecimiento
-        />
-      </Box>
       <Box w="90%" mr="5%" ml="5%" pt={16} pb={10}>
         {/* Sección de Sobre mí */}
-        <Box id="sobre-mi" mb={12}>
-          <Text fontSize="3xl" fontWeight="bold" mb={4}>
-            Sobre mí
-          </Text>
-          <Box justifyItems="center">
-            <Text fontSize="xl" textAlign="center" color="gray.700" maxW="100%">
-              Con años de experiencia en administración pública, he
-              perfeccionado mis habilidades en la resolución de conflictos y en
-              la construcción de relaciones sólidas con organizaciones y
-              beneficiarios. Además, he adquirido experiencia en gestión
-              administrativa y manejo de archivos. Mi rol en Recursos Humanos me
-              ha permitido desarrollar experiencia en capacitación de personal,
-              reclutamiento, selección, realización de entrevistas y
-              organización de expedientes personales. Actualmente, busco un
-              entorno de trabajo dinámico que fomente las oportunidades de
-              crecimiento profesional.
+        <Box id="sobre-mi" mb={12} mt={10}>
+          <Flex
+            direction={{ base: "column", md: "row" }}
+            align="center"
+            justify="space-between"
+            mb={6}
+          >
+            <Text fontSize="3xl" fontWeight="bold" textAlign="left">
+              Sobre mí
             </Text>
-          </Box>
+            <Image
+              src="/images/perfil.jpeg"
+              alt="Foto de perfil"
+              borderRadius="full"
+              boxSize={{ base: "50px", md: "100px", lg: "150px" }}
+              objectFit="cover"
+              objectPosition="top"
+            />
+          </Flex>
+
+          <Text fontSize="xl" color="gray.700" maxW="100%">
+            Con años de experiencia en administración pública, he perfeccionado
+            mis habilidades en la resolución de conflictos y en la construcción
+            de relaciones sólidas con organizaciones y beneficiarios. Además, he
+            adquirido experiencia en gestión administrativa y manejo de
+            archivos. Mi rol en Recursos Humanos me ha permitido desarrollar
+            experiencia en capacitación de personal, reclutamiento, selección,
+            realización de entrevistas y organización de expedientes personales.
+          </Text>
+
           <Divider borderColor="gray.400" mt={8} />
         </Box>
 
-        {/* Sección de Experiencia */}
         {/* Sección de Experiencia */}
         <Box id="experiencia" mb={12}>
           <Text fontSize="3xl" fontWeight="bold" mb={6}>
             Experiencia
           </Text>
-          <SimpleGrid
-            columns={[1, 1, 3]} // Cambia a 1 columna en pantallas pequeñas, 2 en medianas, y 3 en grandes
-            spacing={6}
-          >
+          <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>
             {experienciaData.map((item, index) => (
               <Flex
                 key={index}
